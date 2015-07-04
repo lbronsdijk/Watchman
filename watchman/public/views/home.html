@@ -1,0 +1,43 @@
+<div class="jumbotron">
+    <div class="container">
+        <ul class="alphabet">
+            <li ng-repeat="char in alphabet">
+                <span ng-click="filterByAlphabet(char)">{{char}}</span>
+            </li>
+        </ul>
+        <ul class="genres">
+            <li ng-repeat="genre in genres">
+                <span ng-click="filterByGenre(genre)">{{genre}}</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            {{headingTitle}}
+            <div class="pull-right">
+                <input ng-class="{'active': searchIsActive}" class="search" type="text" ng-model="query.name" placeholder="Zoeken...">
+                <span ng-click="searchButton()" class="search-icon glyphicon glyphicon-search"></span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="row show-list">
+                <div class="col-xs-4 col-md-3" ng-repeat="show in shows | filter:query | orderBy:'rating':true">
+                    <a href="/shows/{{show._id}}">
+                        <img class="img-rounded" ng-src="{{show.poster}}" width="100%"/>
+                    </a>
+                    <div class="text-center">
+                        <a href="/shows/{{show._id}}">{{show.name}}</a>
+                        <p class="text-muted">Afleveringen: {{show.episodes.length}}</p>
+                    </div>
+                </div>
+                <div class="text-center" ng-show="!shows.length">
+                    <p>Je watchlist is leeg.</p>
+                    <a href="/add" class="btn btn-primary">Voeg een serie toe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="watchman">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Watchman</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar navbar-default navbar-static-top" role="navigation" bs-navbar>
+	  	<div class="navbar-header">
+	    	<a class="navbar-brand" href="/">
+	    		<span class="glyphicon glyphicon-eye-open"></span><strong> Watchman</strong>
+	    	</a>
+	  	</div>
+	  	<ul class="nav navbar-nav">
+	    	<li data-match-route="/$"><a href="/">Home</a></li>
+	    	<li data-match-route="/add"><a href="/add">Serie Toevoegen</a></li>
+	  	</ul>
+	</div>
+
+    <div ng-view></div>
+
+    <script src="app.min.js"></script>
+</body>
+</html>
