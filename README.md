@@ -12,5 +12,5 @@ Following frameworks has been used:
 * MongoDB
 * express-generator (simply setting up a javascript application)
 
-##### Demo
-You can check out the app live at [watchman.amy.lucbronsdijk.nl](http:://watchman.amy.lucbronsdijk.nl).
+**Demo**
+You can check out the app live at [watchman.amy.lucbronsdijk.nl](http://watchman.amy.lucbronsdijk.nl).
