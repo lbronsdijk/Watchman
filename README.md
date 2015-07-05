@@ -13,4 +13,4 @@ Following frameworks has been used:
 * express-generator (simply setting up a javascript application)
 
 #### Demo
-You can check out the app live at [watchman.amy.lucbronsdijk.nl](http://watchman.amy.lucbronsdijk.nl).
+You can check out the app live at [watchman.amy.lucbronsdijk.nl](http://watchman.amy.lucbronsdijk.nl). Feel free to add some of your favorite shows.
