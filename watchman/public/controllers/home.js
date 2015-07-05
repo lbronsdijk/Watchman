@@ -11,7 +11,8 @@
 angular.module('watchman')
     .controller('HomeCtrl', ['$scope', 'Show', function($scope, Show) {
 
-        $scope.headingTitle = 'Top 10 series';
+        $scope.headingTitle   = 'Top 10 series';
+        $scope.searchIsActive = false;
 
         // Alpabet for filter
         $scope.alphabet = ['0-9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
@@ -39,7 +40,7 @@ angular.module('watchman')
             $scope.headingTitle = char;
         };
 
-        $scope.searchIsActive = false;
+        // Switch search box        
         $scope.searchButton = function() {
             $scope.searchIsActive = !$scope.searchIsActive;
         };
