@@ -14,3 +14,5 @@ Following frameworks has been used:
 
 #### Demo
 You can check out the app live at [watchman.amy.lucbronsdijk.nl](http://watchman.amy.lucbronsdijk.nl). Feel free to add some of your favorite shows.
+
+![Image of Yaktocat](http://f.cl.ly/items/1i2l3X0x473E1y140l0S/Schermafbeelding%202015-08-13%20om%2014.49.27.png)
